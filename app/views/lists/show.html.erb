@@ -1,0 +1,7 @@
+<h2>Detail of the list</h2>
+
+<%= @list.name %>
+
+<%= link_to "add a bookmark", new_list_bookmark_path(@list) %>
+
+<%= link_to "destroy bookmark", lists_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
